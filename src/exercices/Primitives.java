@@ -2,7 +2,7 @@ package exercices;
 
 public class Primitives {
 
-    // change the method 'integer' to return the expected result
+    // change the method 'integer' to return the expected result : int 42
     public static int integer() {
         return 0;
     }
