@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 public class PrimitivesTest extends MainTest {
 
     @Test
-    public void test1Integer() {
+    public void testInteger() {
         Primitives obj = new Primitives();
         String methodName = "integer";
         Class[] args = new Class[] { };
@@ -24,7 +24,7 @@ public class PrimitivesTest extends MainTest {
     }
 
     @Test
-    public void test2Str() {
+    public void testStr() {
         Primitives obj = new Primitives();
         String methodName = "str";
         Class[] args = new Class[] { };
@@ -38,7 +38,7 @@ public class PrimitivesTest extends MainTest {
     }
 
     @Test
-    public void test3Real() {
+    public void testReal() {
         Primitives obj = new Primitives();
         String methodName = "real";
         Class[] args = new Class[] { };
@@ -52,7 +52,7 @@ public class PrimitivesTest extends MainTest {
     }
 
     @Test
-    public void test4Bool() {
+    public void testBool() {
         Primitives obj = new Primitives();
         String methodName = "bool";
         Class[] args = new Class[] { };
@@ -66,7 +66,7 @@ public class PrimitivesTest extends MainTest {
     }
 
     @Test
-    public void test5Nothing() {
+    public void testNothing() {
         Primitives obj = new Primitives();
         String methodName = "nothing";
         Class[] args = new Class[] { };
