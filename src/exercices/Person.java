@@ -2,10 +2,6 @@ package exercices;
 
 public class Person {
 
-    // Do not remove this empty constructor !
-    public Person() {
-    }
-
     // TODO 1. Add the following private attributes :
     // - name (String)
     // - age (int)
@@ -37,4 +33,10 @@ public class Person {
     // TODO 9. Create a method 'whoAmI' that returns "My name is {name} and I'm {age}"
     // where you replace {name} and {age} with attributes values
 
+
+
+
+    // Do not remove this empty constructor !
+    public Person() {
+    }
 }
