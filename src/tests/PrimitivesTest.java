@@ -17,7 +17,7 @@ public class PrimitivesTest extends MainTest {
 
         Method method = testMethod(obj, methodName, args);
         try {
-            Assert.assertEquals(42, method.invoke(obj));
+            Assert.assertEquals("1.", 42, method.invoke(obj));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -31,7 +31,7 @@ public class PrimitivesTest extends MainTest {
 
         Method method = testMethod(obj, methodName, args);
         try {
-            Assert.assertEquals("Hello", method.invoke(obj));
+            Assert.assertEquals("2.", "Hello", method.invoke(obj));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -45,7 +45,7 @@ public class PrimitivesTest extends MainTest {
 
         Method method = testMethod(obj, methodName, args);
         try {
-            Assert.assertEquals(3.14, method.invoke(obj));
+            Assert.assertEquals("3.", 3.14, method.invoke(obj));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -59,7 +59,7 @@ public class PrimitivesTest extends MainTest {
 
         Method method = testMethod(obj, methodName, args);
         try {
-            Assert.assertEquals(false, method.invoke(obj));
+            Assert.assertEquals("4.", false, method.invoke(obj));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -73,7 +73,7 @@ public class PrimitivesTest extends MainTest {
 
         Method method = testMethod(obj, methodName, args);
         try {
-            Assert.assertNull(method.invoke(obj));
+            Assert.assertNull("5.", method.invoke(obj));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
