@@ -12,7 +12,7 @@ public class Person {
     // - wilder (boolean)
 
 
-    // TODO 2. Add a Constructor with name and age arguments (in this order).
+    // TODO 2. Add a Constructor with name and age arguments (in this order)
     // This constructor must initialize name and age attributes
 
 
@@ -25,7 +25,7 @@ public class Person {
     // TODO 5. Add getter method for age attribute
 
 
-    // TODO 6. Add setter method for name attribute
+    // TODO 6. Add setter method for age attribute
 
 
     // TODO 7. Add getter method for wilder attribute
