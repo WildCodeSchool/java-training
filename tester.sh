@@ -14,5 +14,5 @@ if [ -n "$1" ]; then
         java -classpath out:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.${classname}Test
     fi
 else
-    echo "Please specify the class to test, e.g. : ./tester Primitives"
+    echo "Please specify the class to test, e.g. : ./tester.sh Primitives"
 fi

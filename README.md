@@ -32,7 +32,7 @@ Le premier fichier qui va t'intéresser est `tester.sh`. C'est lui qui va se cha
 Pour tester si le script fonctionne, place toi dans le dossier `java-training` et entre la commande :
 
 ``` bash
-./tester
+./tester.sh
 ```
 Si tu vois le message :
 ```bash
@@ -46,12 +46,12 @@ chmod u+x tester.sh
 
 Le message attendu est le suivant :
 ```bash
-Please specify the class to test, e.g. : ./tester Primitives
+Please specify the class to test, e.g. : ./tester.sh Primitives
 ```
 
 Suivons les indications :
 ```bash
-./tester Primitives
+./tester.sh Primitives
 ```
 
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
@@ -64,7 +64,7 @@ Commence par éditer le fichier `src/exercices/Primitives.java`.
 
 Dans ce fichier tu vas trouver une série d'action à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
 ```bash
-./tester Primitives
+./tester.sh Primitives
 ```
 
 Une série de tests va être exécutée sur ton code, et soit des erreurs seront relevées (et il faudra les corriger en regardant les logs), soit tu auras le super message suivant :
