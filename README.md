@@ -77,6 +77,6 @@ OK (5 tests)
 
 ```
 
-4. Résultat
+### 4. Résultat
 
 Quand ton code passe tous les tests, add/commit/push et partage ton dépôt *GitHub* en solution de la quête !
