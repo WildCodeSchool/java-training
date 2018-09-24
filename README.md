@@ -2,7 +2,21 @@
 
 ### 1. Git
 
+#### a. En cours de nouveau projet
+
 Afin de réaliser l'exercice, fait un *fork* de ce projet sur ton compte *GitHub*, puis *clone* le *fork* sur ton dépôt local.
+
+#### b. Tu as déjà un *fork*
+
+Si tu as déjà *forké* le dépôt et que tu l'as récupéré en local, tu peux le mettre à jour de la façon suivante :
+
+```bash
+git fetch upstream
+git checkout master
+git merge upstream/master
+```
+
+> Vérifie que tu as tout bien add/commit/push avant de faire ces commandes !
 
 ### 2. Arborescence et tester.sh
 
