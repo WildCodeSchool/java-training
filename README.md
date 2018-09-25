@@ -1,6 +1,16 @@
 # Java Training
 
-Java Traning est une série de quête qui vont te permettre à t'entrainer au développement Java, et où tu auras la possibilité de tester automatiquement ton code.
+Java Training est une série de quêtes qui vont te permettre de t’entraîner au développement Java : tu auras la possibilité de tester automatiquement ton code.
+
+Dans cette quête, tu vas t'entraîner à utiliser divers types existants en Java, ainsi qu'à créer des méthodes retournant des valeurs de ces types.
+
+**Résumé de la quête :**
+
+* Fait un *fork* du [dépôt Java Training](https://github.com/WildCodeSchool/java-training).
+* La commande pour tester l'exercice est :
+```bash
+./tester.sh Primitives
+```
 
 ## Etapes
 
@@ -84,6 +94,7 @@ Suivons les indications :
 
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
 
+
 #### Editer les sources de l'exercice
 
 Chaque exercice va être contenu dans un fichier source, contenu dans le dossier `src/exercices/`.
@@ -111,7 +122,7 @@ OK (5 tests)
 ### Envoie ta solution
 
 1. Créé un *fork* du dépôt 
-1. Teste ton code avec `./tester.sh Exercice`
+1. Teste ton code avec `./tester.sh Primitives`
 2. Quand ton code passe tous les tests, add/commit/push sur ton *fork*
 3. Partage ton dépôt *GitHub* en solution de la quête
 
