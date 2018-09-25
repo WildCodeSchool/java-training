@@ -1,24 +1,38 @@
-## Java Training
+# Java Training
 
-### 1. Git
+Java Traning est une série de quête qui vont te permettre à t'entrainer au développement Java, et où tu auras la possibilité de tester automatiquement ton code.
 
-#### a. En cours de nouveau projet
+## Etapes
+
+### Initialisation de ton dépôt
+
+#### 1. Initialiser un nouveau projet
 
 Afin de réaliser l'exercice, fait un *fork* de ce projet sur ton compte *GitHub*, puis *clone* le *fork* sur ton dépôt local.
 
-#### b. Tu as déjà un *fork*
+#### 2. Tu as déjà un *fork*
 
-Si tu as déjà *forké* le dépôt et que tu l'as récupéré en local, tu peux le mettre à jour de la façon suivante :
+Si tu as déjà *fork* le dépôt et que tu l'as récupéré en local, tu peux le mettre à jour.
 
+D'abord, si tu ne l'as pas encore fait, relie ton dépôt local *GitHub* d'origine (pas le *fork*) en *upstream* :
+```bash
+git remote add upstream https://github.com/bastienwcs/java-training
+```
+
+Ensuite récupère les modification de l'*upstream* et fusionne-les sur ton dépôt local :
 ```bash
 git fetch upstream
 git checkout master
 git merge upstream/master
 ```
 
-> Vérifie que tu as tout bien add/commit/push avant de faire ces commandes !
+> Vérifie que tu as tout bien add/commit/push sur ton dépôt avant de faire ces commandes !
 
-### 2. Arborescence et tester.sh
+#### Ressources
+
+* [Dépôt Java Training](https://github.com/WildCodeSchool/java-training/)
+
+### Arborescence du projet
 
 Première étape avant de commencer l'exercice : vérifies que tout est bien en place pour travailler.
 
@@ -70,7 +84,7 @@ Suivons les indications :
 
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
 
-### 3. Les sources
+#### Editer les sources de l'exercice
 
 Chaque exercice va être contenu dans un fichier source, contenu dans le dossier `src/exercices/`.
 
@@ -91,6 +105,18 @@ OK (5 tests)
 
 ```
 
-### 4. Résultat
 
-Quand ton code passe tous les tests, add/commit/push et partage ton dépôt *GitHub* en solution de la quête !
+## Challenge
+
+### Envoie ta solution
+
+1. Créé un *fork* du dépôt 
+1. Teste ton code avec `./tester.sh Exercice`
+2. Quand ton code passe tous les tests, add/commit/push sur ton *fork*
+3. Partage ton dépôt *GitHub* en solution de la quête
+
+### Critères de validation
+
+* Le code se compile sans erreur
+* Le code passe toutes les validations attendues
+* Le code respecte les conventions de code de Java (indentation, nommage de variable, classe, méthodes, etc...)
