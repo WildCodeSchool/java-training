@@ -16,7 +16,7 @@ Si tu as déjà *fork* le dépôt et que tu l'as récupéré en local, tu peux l
 
 D'abord, si tu ne l'as pas encore fait, relie ton dépôt local *GitHub* d'origine (pas le *fork*) en *upstream* :
 ```bash
-git remote add upstream https://github.com/bastienwcs/java-training
+git remote add upstream https://github.com/WildCodeSchool/java-training.git
 ```
 
 Ensuite récupère les modification de l'*upstream* et fusionne-les sur ton dépôt local :
