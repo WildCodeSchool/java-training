@@ -24,7 +24,7 @@ D'abord, si tu ne l'as pas encore fait, relie ton dépôt local *GitHub* d'origi
 git remote add upstream https://github.com/WildCodeSchool/java-training.git
 ```
 
-Ensuite récupère les modification de l'*upstream* et fusionne-les sur ton dépôt local :
+Ensuite récupère les modifications de l'*upstream* et fusionne-les sur ton dépôt local :
 ```bash
 git fetch upstream
 git checkout master
@@ -98,12 +98,12 @@ Chaque exercice va être contenu dans un fichier source, présent dans le dossie
 
 Commence par éditer le fichier `src/exercices/Primitives.java`.
 
-Tu vas y trouver une série d'action à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
+Tu vas y trouver une série d'actions à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
 ```bash
 ./tester.sh Primitives
 ```
 
-Une série de tests va être exécutée sur ton code. Soit des erreurs y seront relevées (et il faudra les corriger en regardant les logs), soit tu auras le super message suivant :
+Une série de tests va être exécutée sur ton code. Soit des erreurs y seront relevées (et il faudra les corriger en regardant les logs), soit tu obtiendras le message suivant :
 ```bash
 JUnit version 4.12
 .....
@@ -127,4 +127,4 @@ OK (5 tests)
 
 * Le code se compile sans erreur
 * Le code passe toutes les validations attendues
-* Le code respecte les conventions de code de Java (indentation, nommage de variable, classe, méthodes, etc...)
+* Le code respecte les conventions de Java (indentation, nommage de variable, classe, méthodes, etc...)
