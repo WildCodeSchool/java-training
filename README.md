@@ -1,16 +1,11 @@
-# Java Training
+# Java Training 
 
-Java Training est une série de quêtes qui vont te permettre de t’entraîner au développement Java : tu auras la possibilité de tester automatiquement ton code.
+Java Training est une série de quêtes qui vont te permettre de t’entraîner au développement Java. Tu auras la possibilité de tester automatiquement le code de chacun des exercices.
 
-Dans cette quête, tu vas t'entraîner à utiliser divers types existants en Java, ainsi qu'à créer des méthodes retournant des valeurs de ces types.
+## Objectifs
 
-**Résumé de la quête :**
-
-* Fait un *fork* du [dépôt Java Training](https://github.com/WildCodeSchool/java-training).
-* La commande pour tester l'exercice est :
-```bash
-./tester.sh Primitives
-```
+* Tester son code
+* Savoir lire des logs d'erreur
 
 ## Etapes
 
@@ -58,16 +53,18 @@ Si tu fais exécutes la commande "tree" dans ton dépôt, tu devrais avoir l'arb
 ├── src
 │   ├── exercices
 │   │   └── Primitives.java
+│   │   └── ...
 │   └── tests
 │       ├── MainTest.java
 │       └── PrimitivesTest.java
+│       └── ...
 └── tester.sh
 
 ```
 
 Le premier fichier qui va t'intéresser est `tester.sh`. C'est lui qui va se charger de la compilation et de l'exécution des tests.
 
-Pour tester si le script fonctionne, place toi dans le dossier `java-training` et entre la commande :
+Pour tester si le script fonctionne, place-toi dans le dossier `java-training` et écrit la commande :
 
 ``` bash
 ./tester.sh
@@ -95,18 +92,18 @@ Suivons les indications :
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
 
 
-#### Editer les sources de l'exercice
+### Editer les sources de l'exercice
 
-Chaque exercice va être contenu dans un fichier source, contenu dans le dossier `src/exercices/`.
+Chaque exercice va être contenu dans un fichier source, présent dans le dossier `src/exercices/`.
 
 Commence par éditer le fichier `src/exercices/Primitives.java`.
 
-Dans ce fichier tu vas trouver une série d'action à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
+Tu vas y trouver une série d'action à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
 ```bash
 ./tester.sh Primitives
 ```
 
-Une série de tests va être exécutée sur ton code, et soit des erreurs seront relevées (et il faudra les corriger en regardant les logs), soit tu auras le super message suivant :
+Une série de tests va être exécutée sur ton code. Soit des erreurs y seront relevées (et il faudra les corriger en regardant les logs), soit tu auras le super message suivant :
 ```bash
 JUnit version 4.12
 .....
@@ -122,7 +119,7 @@ OK (5 tests)
 ### Envoie ta solution
 
 1. Créé un *fork* du dépôt 
-1. Teste ton code avec `./tester.sh Primitives`
+1. Modifie et teste ton code avec `./tester.sh Exercice`
 2. Quand ton code passe tous les tests, add/commit/push sur ton *fork*
 3. Partage ton dépôt *GitHub* en solution de la quête
 
