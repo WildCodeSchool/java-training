@@ -11,7 +11,7 @@ if [ -n "$1" ]; then
         javac -classpath out:lib/junit-4.12.jar -d out src/tests/MainTest.java
         javac -classpath out:lib/junit-4.12.jar -d out src/tests/${classname}Test.java
 
-        java -classpath out:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore tests.${classname}Test
+        java -classpath out:lib/junit-4.12.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore ${classname}Test
     fi
 else
     echo "Please specify the class to test, e.g. : ./tester.sh Primitives"

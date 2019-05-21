@@ -1,5 +1,3 @@
-package exercices;
-
 public class Person {
 
     // TODO 1. Add the following private attributes :

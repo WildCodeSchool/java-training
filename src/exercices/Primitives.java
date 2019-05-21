@@ -1,5 +1,3 @@
-package exercices;
-
 public class Primitives {
 
     // TODO 1 : Change the method 'integer' to return the expected result : int 42

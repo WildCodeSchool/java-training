@@ -1,6 +1,3 @@
-package tests;
-
-import exercices.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
