@@ -32,8 +32,6 @@ public class ObjectTraining {
     // where you replace {name} and {age} with attributes values
 
 
-
-
     // Do not remove this empty constructor !
     public ObjectTraining() {
     }

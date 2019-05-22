@@ -10,7 +10,7 @@ public class PrimitiveTrainingTest extends MainTest {
     public void testInteger() {
         PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "integer";
-        Class[] args = new Class[] { };
+        Class[] args = new Class[]{};
 
         Method method = testMethod(obj, methodName, args);
         try {
@@ -24,7 +24,7 @@ public class PrimitiveTrainingTest extends MainTest {
     public void testStr() {
         PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "str";
-        Class[] args = new Class[] { };
+        Class[] args = new Class[]{};
 
         Method method = testMethod(obj, methodName, args);
         try {
@@ -38,7 +38,7 @@ public class PrimitiveTrainingTest extends MainTest {
     public void testReal() {
         PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "real";
-        Class[] args = new Class[] { };
+        Class[] args = new Class[]{};
 
         Method method = testMethod(obj, methodName, args);
         try {
@@ -52,7 +52,7 @@ public class PrimitiveTrainingTest extends MainTest {
     public void testBool() {
         PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "bool";
-        Class[] args = new Class[] { };
+        Class[] args = new Class[]{};
 
         Method method = testMethod(obj, methodName, args);
         try {
@@ -66,7 +66,7 @@ public class PrimitiveTrainingTest extends MainTest {
     public void testNothing() {
         PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "nothing";
-        Class[] args = new Class[] { };
+        Class[] args = new Class[]{};
 
         Method method = testMethod(obj, methodName, args);
         try {
