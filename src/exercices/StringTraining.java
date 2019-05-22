@@ -13,6 +13,17 @@ public class StringTraining {
 
     /**
      *
+     * @param origin string, ie: "test"
+     * @param compare string, ie: "sample"
+     * @return if origin string is equal to compare string
+     */
+    public static boolean equals(String origin, String compare) {
+
+        return false;
+    }
+
+    /**
+     *
      * @param value character, ie: 't'
      * @return conversion of the character into String, ie: "t"
      */

@@ -233,6 +233,22 @@ public class StringTrainingTest extends MainTest {
     }
 
     @Test
+    public void testEquals() {
+        StringTraining obj = new StringTraining();
+        String methodName = "equals";
+        Class[] args = new Class[]{String.class, String.class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            Assert.assertEquals("Method: " + methodName,
+                    true,
+                    method.invoke(obj, "value", new String("value")));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void testConcat() {
         StringTraining obj = new StringTraining();
         String methodName = "concat";
