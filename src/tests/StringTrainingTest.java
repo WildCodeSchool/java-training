@@ -242,16 +242,16 @@ public class StringTrainingTest extends MainTest {
         try {
             Assert.assertEquals("Method: " + methodName,
                     true,
-                    method.invoke(obj, "value", new String("value")));
+                    method.invoke(obj, "value", "value"));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
     }
 
     @Test
-    public void testConcat() {
+    public void testConcatArgs() {
         StringTraining obj = new StringTraining();
-        String methodName = "concat";
+        String methodName = "concatArgs";
         Class[] args = new Class[]{String.class, String.class};
 
         Method method = testMethod(obj, methodName, args);
@@ -259,6 +259,22 @@ public class StringTrainingTest extends MainTest {
             Assert.assertEquals("Method: " + methodName,
                     "sampletest",
                     method.invoke(obj, "sample", "test"));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testHelloFirstname() {
+        StringTraining obj = new StringTraining();
+        String methodName = "helloFirstname";
+        Class[] args = new Class[]{String.class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            Assert.assertEquals("Method: " + methodName,
+                    "Hello Pedro",
+                    method.invoke(obj, "Pedro"));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
