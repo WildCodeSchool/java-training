@@ -1,6 +1,4 @@
-package exercices;
-
-public class Person {
+public class ObjectTraining {
 
     // TODO 1. Add the following private attributes :
     // - name (String)
@@ -37,6 +35,6 @@ public class Person {
 
 
     // Do not remove this empty constructor !
-    public Person() {
+    public ObjectTraining() {
     }
 }

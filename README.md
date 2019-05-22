@@ -52,11 +52,11 @@ Si tu fais exécutes la commande "tree" dans ton dépôt, tu devrais avoir l'arb
 ├── README.md
 ├── src
 │   ├── exercices
-│   │   └── Primitives.java
+│   │   └── PrimitiveTraining.java
 │   │   └── ...
 │   └── tests
 │       ├── MainTest.java
-│       └── PrimitivesTest.java
+│       └── PrimitiveTrainingTest.java
 │       └── ...
 └── tester.sh
 
@@ -81,12 +81,12 @@ chmod u+x tester.sh
 
 Le message attendu est le suivant :
 ```bash
-Please specify the class to test, e.g. : ./tester.sh Primitives
+Please specify the class to test, e.g. : ./tester.sh PrimitiveTraining
 ```
 
 Suivons les indications :
 ```bash
-./tester.sh Primitives
+./tester.sh PrimitiveTraining
 ```
 
 Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer tout ça !
@@ -96,11 +96,11 @@ Tu vas voir apparaître un tas d'erreurs, c'est normal : ton but est de réparer
 
 Chaque exercice va être contenu dans un fichier source, présent dans le dossier `src/exercices/`.
 
-Commence par éditer le fichier `src/exercices/Primitives.java`.
+Commence par éditer le fichier `src/exercices/PrimitiveTraining.java`.
 
 Tu vas y trouver une série d'actions à réaliser. Quand tu penses avoir terminé, lance la commande correspondante :
 ```bash
-./tester.sh Primitives
+./tester.sh PrimitiveTraining
 ```
 
 Une série de tests va être exécutée sur ton code. Soit des erreurs y seront relevées (et il faudra les corriger en regardant les logs), soit tu obtiendras le message suivant :

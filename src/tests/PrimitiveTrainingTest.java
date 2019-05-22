@@ -1,17 +1,14 @@
-package tests;
-
-import exercices.Primitives;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class PrimitivesTest extends MainTest {
+public class PrimitiveTrainingTest extends MainTest {
 
     @Test
     public void testInteger() {
-        Primitives obj = new Primitives();
+        PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "integer";
         Class[] args = new Class[] { };
 
@@ -25,7 +22,7 @@ public class PrimitivesTest extends MainTest {
 
     @Test
     public void testStr() {
-        Primitives obj = new Primitives();
+        PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "str";
         Class[] args = new Class[] { };
 
@@ -39,7 +36,7 @@ public class PrimitivesTest extends MainTest {
 
     @Test
     public void testReal() {
-        Primitives obj = new Primitives();
+        PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "real";
         Class[] args = new Class[] { };
 
@@ -53,7 +50,7 @@ public class PrimitivesTest extends MainTest {
 
     @Test
     public void testBool() {
-        Primitives obj = new Primitives();
+        PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "bool";
         Class[] args = new Class[] { };
 
@@ -67,7 +64,7 @@ public class PrimitivesTest extends MainTest {
 
     @Test
     public void testNothing() {
-        Primitives obj = new Primitives();
+        PrimitiveTraining obj = new PrimitiveTraining();
         String methodName = "nothing";
         Class[] args = new Class[] { };
 

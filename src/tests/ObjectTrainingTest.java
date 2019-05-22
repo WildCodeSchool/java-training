@@ -1,6 +1,3 @@
-package tests;
-
-import exercices.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -9,11 +6,11 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class PersonTest extends MainTest {
+public class ObjectTrainingTest extends MainTest {
 
     @Test
     public void testAttributes() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
 
         Field fieldName = testField(obj, "name");
         Field fieldAge = testField(obj, "age");
@@ -44,12 +41,12 @@ public class PersonTest extends MainTest {
 
     @Test
     public void testConstructor() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
         Class[] args = new Class[]{String.class, int.class};
 
         Constructor constructor = testConstructor(obj, args);
         try {
-            Assert.assertNotNull("2. Person(name, age)", constructor.newInstance("Charlie", 18));
+            Assert.assertNotNull("2. ObjectTraining(name, age)", constructor.newInstance("Charlie", 18));
         } catch (IllegalAccessException | InvocationTargetException | InstantiationException e) {
             e.printStackTrace();
         }
@@ -57,7 +54,7 @@ public class PersonTest extends MainTest {
 
     @Test
     public void testName() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
         String methodName = "setName";
         Class[] args = new Class[]{String.class};
 
@@ -80,7 +77,7 @@ public class PersonTest extends MainTest {
 
     @Test
     public void testAge() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
         String methodName = "setAge";
         Class[] args = new Class[]{int.class};
 
@@ -103,7 +100,7 @@ public class PersonTest extends MainTest {
 
     @Test
     public void testWilder() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
         String methodName = "setWilder";
         Class[] args = new Class[]{boolean.class};
 
@@ -126,7 +123,7 @@ public class PersonTest extends MainTest {
 
     @Test
     public void testWhomAmI() {
-        Person obj = new Person();
+        ObjectTraining obj = new ObjectTraining();
 
         String methodName = "setName";
         Class[] args = new Class[]{String.class};
