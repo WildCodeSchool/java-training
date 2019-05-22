@@ -193,7 +193,7 @@ public class StringTrainingTest extends MainTest {
         Method method = testMethod(obj, methodName, args);
         try {
             Assert.assertEquals("Method: " + methodName,
-                    5,
+                    6,
                     method.invoke(obj, "sample"));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();

@@ -68,7 +68,7 @@ public class StringTraining {
      */
     public static char firstChar(String string) {
 
-        return ' ';
+        return '*';
     }
 
     /**
@@ -78,7 +78,7 @@ public class StringTraining {
      */
     public static char lastChar(String string) {
 
-        return ' ';
+        return '*';
     }
 
     /**
@@ -96,10 +96,10 @@ public class StringTraining {
 
     /**
      *
-     * @param value, ie: "test"
+     * @param string, ie: "test"
      * @return the string with the first character in upper case, ie: "Test"
      */
-    public static String firstUpper(String value) {
+    public static String firstUpper(String string) {
 
         return "";
     }
@@ -111,8 +111,10 @@ public class StringTraining {
      * @return the number of character occurrences in string, ie: 2
      */
     public static int occurrences(String string, char search) {
+        int count = 0;
+        // use a for loop
 
-        return 0;
+        return count;
     }
 
     /**
