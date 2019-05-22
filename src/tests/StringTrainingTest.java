@@ -10,7 +10,7 @@ public class StringTrainingTest extends MainTest {
     public void testJoin() {
         StringTraining obj = new StringTraining();
         String methodName = "join";
-        Class[] args = new Class[]{String.class, String.class};
+        Class[] args = new Class[]{String[].class, String.class};
 
         Method method = testMethod(obj, methodName, args);
         try {
@@ -32,9 +32,9 @@ public class StringTrainingTest extends MainTest {
         Method method = testMethod(obj, methodName, args);
         try {
             String[] expected = {"sample", "test", "value"};
-            Assert.assertEquals("Method: " + methodName,
+            Assert.assertArrayEquals("Method: " + methodName,
                     expected,
-                    method.invoke(obj, "sample,test,value", ","));
+                    (Object[]) method.invoke(obj, "sample,test,value", ","));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
