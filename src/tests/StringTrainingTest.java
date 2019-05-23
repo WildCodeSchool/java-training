@@ -34,7 +34,7 @@ public class StringTrainingTest extends MainTest {
             String[] expected = {"sample", "test", "value"};
             Assert.assertArrayEquals("Method: " + methodName,
                     expected,
-                    (Object[]) method.invoke(obj, "sample,test,value", ","));
+                    (String[]) method.invoke(obj, "sample,test,value", ","));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -89,9 +89,9 @@ public class StringTrainingTest extends MainTest {
     }
 
     @Test
-    public void testFirstUpper() {
+    public void testCapitalize() {
         StringTraining obj = new StringTraining();
-        String methodName = "firstUpper";
+        String methodName = "capitalize";
         Class[] args = new Class[]{String.class};
 
         Method method = testMethod(obj, methodName, args);
