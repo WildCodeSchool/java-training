@@ -7,6 +7,61 @@ import java.lang.reflect.Method;
 public class ArrayTrainingTest extends MainTest {
 
     @Test
+    public void testReverse() {
+        ArrayTraining obj = new ArrayTraining();
+        String methodName = "reverse";
+        Class[] args = new Class[]{int[].class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            int[] array = {3, 5, 7};
+            int[] expected = {7, 5, 3};
+            Assert.assertArrayEquals("Method: " + methodName,
+                    expected,
+                    (int[]) method.invoke(obj, (Object) array));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testEquals() {
+        ArrayTraining obj = new ArrayTraining();
+        String methodName = "equals";
+        Class[] args = new Class[]{int[].class, int[].class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            int[] first = {2, 6};
+            int[] second = {2, 6};
+            Assert.assertEquals("Method: " + methodName,
+                    true,
+                    method.invoke(obj, first, second));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testConcat() {
+        ArrayTraining obj = new ArrayTraining();
+        String methodName = "concat";
+        Class[] args = new Class[]{int[].class, int[].class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            int[] first = {3, 6, 5};
+            int[] second = {2, 7};
+            int[] expected = {3, 6, 5, 2, 7};
+            Assert.assertArrayEquals("Method: " + methodName,
+                    expected,
+                    (int[]) method.invoke(obj, first, second));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void testCapitalize() {
         ArrayTraining obj = new ArrayTraining();
         String methodName = "capitalize";
@@ -18,7 +73,7 @@ public class ArrayTrainingTest extends MainTest {
             String[] expected = {"Test", "Sample", "Value"};
             Assert.assertArrayEquals("Method: " + methodName,
                     expected,
-                    (String[]) method.invoke(obj, array));
+                    (String[]) method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -52,7 +107,7 @@ public class ArrayTrainingTest extends MainTest {
             int[] array = {2, 7, 4};
             Assert.assertEquals("Method: " + methodName,
                     13,
-                    method.invoke(obj, array));
+                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -87,7 +142,7 @@ public class ArrayTrainingTest extends MainTest {
             int[] array = {2, 7, 4};
             Assert.assertEquals("Method: " + methodName,
                     7,
-                    method.invoke(obj, array));
+                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -121,7 +176,7 @@ public class ArrayTrainingTest extends MainTest {
             int[] array = {4, 5, 6};
             Assert.assertEquals("Method: " + methodName,
                     6,
-                    method.invoke(obj, array));
+                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -138,7 +193,7 @@ public class ArrayTrainingTest extends MainTest {
             int[] array = {4, 5, 6};
             Assert.assertEquals("Method: " + methodName,
                     4,
-                    method.invoke(obj, array));
+                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -155,7 +210,7 @@ public class ArrayTrainingTest extends MainTest {
             int[] array = {4, 5, 6};
             Assert.assertEquals("Method: " + methodName,
                     3,
-                    method.invoke(obj, array));
+                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
