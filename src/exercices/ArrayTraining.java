@@ -79,15 +79,6 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {1, 3, 2}
-     * @return max value in the array, ie: 3
-     */
-    public int maxValue(int[] array) {
-
-        return 0;
-    }
-
-    /**
      * @param array,    ie: {3, 8, 5}
      * @param value,    ie: 4
      * @param position, ie: 1
