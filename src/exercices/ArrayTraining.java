@@ -128,17 +128,6 @@ public class ArrayTraining {
 
     /**
      * @param first,  ie: {1, 2, 3}
-     * @param second, ie: {4, 5}
-     * @return concatenates first and second values in one array,
-     * ie: {1, 2, 3, 4, 5}
-     */
-    public int[] concat(int[] first, int[] second) {
-
-        return null;
-    }
-
-    /**
-     * @param first,  ie: {1, 2, 3}
      * @param second, ie: {3, 2, 1}
      * @return if values in first and second arrays, in the same position,
      * are equals, ie: false
@@ -153,6 +142,17 @@ public class ArrayTraining {
      * @return array with reversed values, ie: {3, 2, 1}
      */
     public int[] reverse(int[] array) {
+
+        return null;
+    }
+
+    /**
+     * @param first,  ie: {1, 2, 3}
+     * @param second, ie: {4, 5}
+     * @return concatenates first and second values in one array,
+     * ie: {1, 2, 3, 4, 5}
+     */
+    public int[] concat(int[] first, int[] second) {
 
         return null;
     }

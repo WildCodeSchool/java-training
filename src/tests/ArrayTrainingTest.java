@@ -7,6 +7,25 @@ import java.lang.reflect.Method;
 public class ArrayTrainingTest extends MainTest {
 
     @Test
+    public void testConcat() {
+        ArrayTraining obj = new ArrayTraining();
+        String methodName = "concat";
+        Class[] args = new Class[]{int[].class, int[].class};
+
+        Method method = testMethod(obj, methodName, args);
+        try {
+            int[] first = {3, 6, 5};
+            int[] second = {2, 7};
+            int[] expected = {3, 6, 5, 2, 7};
+            Assert.assertArrayEquals("Method: " + methodName,
+                    expected,
+                    (int[]) method.invoke(obj, first, second));
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
     public void testReverse() {
         ArrayTraining obj = new ArrayTraining();
         String methodName = "reverse";
@@ -37,25 +56,6 @@ public class ArrayTrainingTest extends MainTest {
             Assert.assertEquals("Method: " + methodName,
                     true,
                     method.invoke(obj, first, second));
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void testConcat() {
-        ArrayTraining obj = new ArrayTraining();
-        String methodName = "concat";
-        Class[] args = new Class[]{int[].class, int[].class};
-
-        Method method = testMethod(obj, methodName, args);
-        try {
-            int[] first = {3, 6, 5};
-            int[] second = {2, 7};
-            int[] expected = {3, 6, 5, 2, 7};
-            Assert.assertArrayEquals("Method: " + methodName,
-                    expected,
-                    (int[]) method.invoke(obj, first, second));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
@@ -126,23 +126,6 @@ public class ArrayTrainingTest extends MainTest {
             Assert.assertArrayEquals("Method: " + methodName,
                     expected,
                     (int[]) method.invoke(obj, array, 3, 1));
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void testMaxValue() {
-        ArrayTraining obj = new ArrayTraining();
-        String methodName = "maxValue";
-        Class[] args = new Class[]{int[].class};
-
-        Method method = testMethod(obj, methodName, args);
-        try {
-            int[] array = {2, 7, 4};
-            Assert.assertEquals("Method: " + methodName,
-                    7,
-                    method.invoke(obj, (Object) array));
         } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
