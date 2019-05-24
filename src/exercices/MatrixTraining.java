@@ -74,15 +74,6 @@ public class MatrixTraining {
     }
 
     /**
-     * @param matrix, ie: {{6, 2, 8}, {7, 5, 3}}
-     * @return max value in the matrix, ie: 8
-     */
-    public int maxValue(int[][] matrix) {
-
-        return 0;
-    }
-
-    /**
      * @param matrix, ie: {{1, 2, 3}, {8, 5, 6}}
      * @param value,  ie: 4
      * @param line,   ie: 1
