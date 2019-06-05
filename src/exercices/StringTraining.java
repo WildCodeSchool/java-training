@@ -20,8 +20,8 @@ public class StringTraining {
     }
 
     /**
-     * @param origin  string, ie: "test"
-     * @param compare string, ie: "sample"
+     * @param origin  string, eg: "test"
+     * @param compare string, eg: "sample"
      * @return if origin string is equal to compare string
      */
     public static boolean equals(String origin, String compare) {
@@ -30,8 +30,8 @@ public class StringTraining {
     }
 
     /**
-     * @param value character, ie: 't'
-     * @return conversion of the character into String, ie: "t"
+     * @param value character, eg: 't'
+     * @return conversion of the character into String, eg: "t"
      */
     public static String charToString(char value) {
 
@@ -39,8 +39,8 @@ public class StringTraining {
     }
 
     /**
-     * @param value integer, ie: 3
-     * @return convertion of the integer into String, ie: "3"
+     * @param value integer, eg: 3
+     * @return convertion of the integer into String, eg: "3"
      */
     public static String intToString(int value) {
 
@@ -48,8 +48,8 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "test"
-     * @return string length, ie: 4
+     * @param string, eg: "test"
+     * @return string length, eg: 4
      */
     public static int length(String string) {
 
@@ -58,7 +58,7 @@ public class StringTraining {
 
     /**
      * @param string, ie "test"
-     * @return string in upper case, ie: "TEST"
+     * @return string in upper case, eg: "TEST"
      */
     public static String upper(String string) {
 
@@ -66,8 +66,8 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "TEST"
-     * @return string in lower case, ie: "test"
+     * @param string, eg: "TEST"
+     * @return string in lower case, eg: "test"
      */
     public static String lower(String string) {
 
@@ -75,8 +75,8 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "test"
-     * @return first character of the string, ie: 't'
+     * @param string, eg: "test"
+     * @return first character of the string, eg: 't'
      */
     public static char firstChar(String string) {
 
@@ -84,8 +84,8 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "value"
-     * @return last character of the string, ie: 'e'
+     * @param string, eg: "value"
+     * @return last character of the string, eg: 'e'
      */
     public static char lastChar(String string) {
 
@@ -93,10 +93,10 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "test"
-     * @param begin   position (inclusive) of the substring, ie: 1
-     * @param end     postion (exclusive) of the substring, ie: 3
-     * @return the substring from begin position to end position, ie: "es"
+     * @param string, eg: "test"
+     * @param begin   position (inclusive) of the substring, eg: 1
+     * @param end     postion (exclusive) of the substring, eg: 3
+     * @return the substring from begin position to end position, eg: "es"
      */
     public static String subString(String string, int begin, int end) {
         // https://howtodoinjava.com/java/string/java-string-substring-example/
@@ -105,8 +105,8 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "test"
-     * @return the string with the first character in upper case, ie: "Test"
+     * @param string, eg: "test"
+     * @return the string with the first character in upper case, eg: "Test"
      */
     public static String capitalize(String string) {
 
@@ -114,9 +114,9 @@ public class StringTraining {
     }
 
     /**
-     * @param string, ie: "test"
-     * @param search  character, ie: 't'
-     * @return the number of character occurrences in string, ie: 2
+     * @param string, eg: "test"
+     * @param search  character, eg: 't'
+     * @return the number of character occurrences in string, eg: 2
      */
     public static int occurrences(String string, char search) {
 
@@ -124,10 +124,10 @@ public class StringTraining {
     }
 
     /**
-     * @param string,  ie: "test"
-     * @param search,  ie: 't'
-     * @param replace, ie: 'w'
-     * @return the string where searched characters are replaced, ie: "wesw"
+     * @param string,  eg: "test"
+     * @param search,  eg: 't'
+     * @param replace, eg: 'w'
+     * @return the string where searched characters are replaced, eg: "wesw"
      */
     public static String replaceChar(String string, char search, char replace) {
 
@@ -135,10 +135,10 @@ public class StringTraining {
     }
 
     /**
-     * @param string,  ie: "test"
-     * @param search,  ie: "e"
-     * @param replace, ie: "oa"
-     * @return the string where searched substring are replaced, ie: "toast"
+     * @param string,  eg: "test"
+     * @param search,  eg: "e"
+     * @param replace, eg: "oa"
+     * @return the string where searched substring are replaced, eg: "toast"
      */
     public static String replaceString(String string, String search, String replace) {
 
@@ -146,9 +146,9 @@ public class StringTraining {
     }
 
     /**
-     * @param string,    ie: "test|value"
-     * @param delimiter, ie: "|"
-     * @return string array that contains values splited on the delimiter, ie: {"test", "value"}
+     * @param string,    eg: "test|value"
+     * @param delimiter, eg: "|"
+     * @return string array that contains values splited on the delimiter, eg: {"test", "value"}
      */
     public static String[] split(String string, String delimiter) {
         // https://howtodoinjava.com/java/string/java-string-split-example/
@@ -157,8 +157,8 @@ public class StringTraining {
     }
 
     /**
-     * @param strings    array, ie: {"test", "value"}
-     * @param delimiter, ie: ";"
+     * @param strings    array, eg: {"test", "value"}
+     * @param delimiter, eg: ";"
      * @return string of array values joined with the delimiter, ex: "test;value"
      */
     public static String join(String[] strings, String delimiter) {

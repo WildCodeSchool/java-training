@@ -1,8 +1,8 @@
 public class ArrayTraining {
 
     /**
-     * @param n size of the array, ie: 3
-     * @return an empty int array of size n, ie: {0, 0, 0}
+     * @param n size of the array, eg: 3
+     * @return an empty int array of size n, eg: {0, 0, 0}
      */
     public int[] emptyIntArray(int n) {
 
@@ -10,8 +10,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param n size of the array, ie: 2
-     * @return an empty String array of size n, ie: {null, null}
+     * @param n size of the array, eg: 2
+     * @return an empty String array of size n, eg: {null, null}
      */
     public String[] emptyStringArray(int n) {
 
@@ -19,10 +19,10 @@ public class ArrayTraining {
     }
 
     /**
-     * @param a first value, ie: 3
-     * @param b second value, ie: 2
-     * @param c third value, ie: 1
-     * @return an int array with a, b and c values, ie: {3, 2, 1}
+     * @param a first value, eg: 3
+     * @param b second value, eg: 2
+     * @param c third value, eg: 1
+     * @return an int array with a, b and c values, eg: {3, 2, 1}
      */
     public int[] intArray(int a, int b, int c) {
 
@@ -30,11 +30,11 @@ public class ArrayTraining {
     }
 
     /**
-     * @param a first value, ie: "test"
-     * @param b second value, ie: "sample"
-     * @param c third value, ie: "value"
+     * @param a first value, eg: "test"
+     * @param b second value, eg: "sample"
+     * @param c third value, eg: "value"
      * @return an int array with a, b and c values,
-     * ie: {"test", sample", "value"}
+     * eg: {"test", sample", "value"}
      */
     public String[] stringArray(String a, String b, String c) {
 
@@ -42,8 +42,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {1, 2, 3}
-     * @return length of the array, ie: 1
+     * @param array, eg: {1, 2, 3}
+     * @return length of the array, eg: 1
      */
     public int length(int[] array) {
 
@@ -51,8 +51,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {3, 2, 1}
-     * @return first value of the array, ie: 3
+     * @param array, eg: {3, 2, 1}
+     * @return first value of the array, eg: 3
      */
     public int firstValue(int[] array) {
 
@@ -60,8 +60,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {3, 2, 1}
-     * @return last value of the array, ie: 1
+     * @param array, eg: {3, 2, 1}
+     * @return last value of the array, eg: 1
      */
     public int lastValue(int[] array) {
 
@@ -69,9 +69,9 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array,    ie: {3, 2, 1}
-     * @param position, ie: 1
-     * @return value of the array at position, ie: 2
+     * @param array,    eg: {3, 2, 1}
+     * @param position, eg: 1
+     * @return value of the array at position, eg: 2
      */
     public int valueAtPosition(int[] array, int position) {
 
@@ -79,10 +79,10 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array,    ie: {3, 8, 5}
-     * @param value,    ie: 4
-     * @param position, ie: 1
-     * @return the array with the value replaced at position, ie: {3, 4, 5}
+     * @param array,    eg: {3, 8, 5}
+     * @param value,    eg: 4
+     * @param position, eg: 1
+     * @return the array with the value replaced at position, eg: {3, 4, 5}
      */
     public int[] replace(int[] array, int value, int position) {
 
@@ -90,8 +90,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {1, 2, 3}
-     * @return sum of values of the array, ie: 6
+     * @param array, eg: {1, 2, 3}
+     * @return sum of values of the array, eg: 6
      */
     public int sum(int[] array) {
 
@@ -99,9 +99,9 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array,  ie: {1, 2, 3}
-     * @param search, ie: 2
-     * @return if array contains searched value, ie: true
+     * @param array,  eg: {1, 2, 3}
+     * @param search, eg: 2
+     * @return if array contains searched value, eg: true
      */
     public boolean contains(int[] array, int search) {
 
@@ -109,8 +109,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {"sample", "value"}
-     * @return array where all words are capitalized, ie: {"Sample", "Value"}
+     * @param array, eg: {"sample", "value"}
+     * @return array where all words are capitalized, eg: {"Sample", "Value"}
      */
     public String[] capitalize(String[] array) {
 
@@ -118,10 +118,10 @@ public class ArrayTraining {
     }
 
     /**
-     * @param first,  ie: {1, 2, 3}
-     * @param second, ie: {3, 2, 1}
+     * @param first,  eg: {1, 2, 3}
+     * @param second, eg: {3, 2, 1}
      * @return if values in first and second arrays, in the same position,
-     * are equals, ie: false
+     * are equals, eg: false
      */
     public boolean equals(int[] first, int[] second) {
 
@@ -129,8 +129,8 @@ public class ArrayTraining {
     }
 
     /**
-     * @param array, ie: {1, 2, 3}
-     * @return array with reversed values, ie: {3, 2, 1}
+     * @param array, eg: {1, 2, 3}
+     * @return array with reversed values, eg: {3, 2, 1}
      */
     public int[] reverse(int[] array) {
 
@@ -138,10 +138,10 @@ public class ArrayTraining {
     }
 
     /**
-     * @param first,  ie: {1, 2, 3}
-     * @param second, ie: {4, 5}
+     * @param first,  eg: {1, 2, 3}
+     * @param second, eg: {4, 5}
      * @return concatenates first and second values in one array,
-     * ie: {1, 2, 3, 4, 5}
+     * eg: {1, 2, 3, 4, 5}
      */
     public int[] concat(int[] first, int[] second) {
 
