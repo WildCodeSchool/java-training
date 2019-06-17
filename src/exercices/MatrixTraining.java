@@ -37,7 +37,7 @@ public class MatrixTraining {
      * @param a first array
      * @param b second array
      * @param c third array
-     * @return an int matrix with a, b and c arrays
+     * @return a String matrix with a, b and c arrays
      */
     public String[][] stringMatrix(String[] a, String[] b, String[] c) {
 
