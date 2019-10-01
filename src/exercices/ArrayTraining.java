@@ -33,7 +33,7 @@ public class ArrayTraining {
      * @param a first value, eg: "test"
      * @param b second value, eg: "sample"
      * @param c third value, eg: "value"
-     * @return an int array with a, b and c values,
+     * @return a String array with a, b and c values,
      * eg: {"test", sample", "value"}
      */
     public String[] stringArray(String a, String b, String c) {
