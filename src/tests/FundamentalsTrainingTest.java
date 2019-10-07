@@ -61,9 +61,9 @@ public class FundamentalsTrainingTest extends MainTest {
 
     @Test
     public void isValueOdd() {
-        Assert.assertTrue(FundamentalsTraining.isValueEven(33));
-        Assert.assertTrue(FundamentalsTraining.isValueEven(3));
-        Assert.assertFalse(FundamentalsTraining.isValueEven(42));
+        Assert.assertTrue(FundamentalsTraining.isValueOdd(33));
+        Assert.assertTrue(FundamentalsTraining.isValueOdd(3));
+        Assert.assertFalse(FundamentalsTraining.isValueOdd(42));
     }
 
     @Test
@@ -133,7 +133,7 @@ public class FundamentalsTrainingTest extends MainTest {
 
     @Test
     public void whichValueIsThis() {
-        Assert.assertEquals(0, FundamentalsTraining.whichValueIsThis(0, 1, true));
-        Assert.assertEquals(1, FundamentalsTraining.whichValueIsThis(0, 1, false));
+        Assert.assertEquals(1, FundamentalsTraining.whichValueIsThis(0, 1, true));
+        Assert.assertEquals(0, FundamentalsTraining.whichValueIsThis(0, 1, false));
     }
 }
